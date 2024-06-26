@@ -1,25 +1,34 @@
-import React, { useState } from 'react';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./home";
+import { Header } from "./Header";
+import FirstJsxSyntax from "./JSX-Syntax/FirstJsxSyntax";
+import ThirdJsxSyntax from "./JSX-Syntax/ThirdJsxSyntax";
+import SecondJsxSyntax from "./JSX-Syntax/SecondJsxSyntax";
+import Class_Comp from "./class-component/class_comp";
+import FunctionalComp from "./functional-component/FunctionalComp";
+import Greeting from "./Props/Greeting";
+import Head from "./Props/Head";
+import AndezCh from "./State/AndezCh";
 
 function App() {
-  const [name, setName] = useState('');
-
-  const handleChange = (event) => {
-    setName(event.target.value);
-  };
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello, {name ? name : 'Your Name'}</h1>
-        <form>
-          <label>
-            Enter your name:
-            <input type="text" value={name} onChange={handleChange} />
-          </label>
-        </form>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/FirstJsxSyntax" element={<FirstJsxSyntax />} />
+        <Route path="/SecondJsxSyntax" element={<SecondJsxSyntax />} />
+        <Route path="/ThirdJsxSyntax" element={<ThirdJsxSyntax />} />
+        <Route path="/class_comp" element={<Class_Comp />} />
+        <Route path="/FunctionalComp" element={<FunctionalComp />} />
+        <Route path="/Greeting" element={<Greeting />} />
+        <Route path="/Head" element={<Head />} />
+        <Route path="/AndezCh" element={<AndezCh />} />
+
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
