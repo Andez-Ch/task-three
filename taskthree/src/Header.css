@@ -1,0 +1,21 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header-link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5a7c3e; 
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-link:hover {
+    background-color: #142714;
+  }
+  
