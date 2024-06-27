@@ -8,8 +8,9 @@ import SecondJsxSyntax from "./JSX-Syntax/SecondJsxSyntax";
 import Class_Comp from "./class-component/class_comp";
 import FunctionalComp from "./functional-component/FunctionalComp";
 import Greeting from "./Props/Greeting";
-import Head from "./Props/Head";
+import Headz from "./Props/Headz";
 import AndezCh from "./State/AndezCh";
+
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route path="/class_comp" element={<Class_Comp />} />
         <Route path="/FunctionalComp" element={<FunctionalComp />} />
         <Route path="/Greeting" element={<Greeting />} />
-        <Route path="/Head" element={<Head />} />
+        <Route path="/Headz" element={<Headz />} />
         <Route path="/AndezCh" element={<AndezCh />} />
 
 
