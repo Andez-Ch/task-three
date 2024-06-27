@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./functionalComp.css"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./home";
 import { Header } from "./Header";
@@ -11,6 +12,8 @@ import FunctionalComp from "./functional-component/FunctionalComp";
 import Greeting from "./Props/Greeting";
 import Headz from "./Props/Headz";
 import AndezCh from "./State/AndezCh";
+
+
 
 
 function App() {

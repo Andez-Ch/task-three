@@ -4,19 +4,20 @@
     align-items: center;
     padding: 10px;
     padding-left: 2%;
+    background-color: #2b8134ef;
   }
   
   .header-link {
     margin-right: 10px;
     text-decoration: none;
     color: #fff;
-    background-color: #5a7c3e; 
+    background-color: #0b5231; 
     padding: 8px 16px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
   
   .header-link:hover {
-    background-color: #142714;
+    background-color: #2b8134ef;
   }
   
