@@ -6,7 +6,7 @@ const Greeting = ({ name, isLoggedIn }) => {
     <div>
       {" "}
       <h2>Hello, {isLoggedIn ? name : "Guest"}!</h2>
-      <Headz title={'How is you'} />
+      <Headz title={'How are you'} />
     </div>
   );
 };
