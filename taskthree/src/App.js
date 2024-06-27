@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./home";
 import { Header } from "./Header";
@@ -15,7 +16,9 @@ import AndezCh from "./State/AndezCh";
 function App() {
   return (
     <BrowserRouter>
+     
       <Header />
+      <div class="App-head">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/FirstJsxSyntax" element={<FirstJsxSyntax />} />
@@ -27,8 +30,8 @@ function App() {
         <Route path="/Headz" element={<Headz />} />
         <Route path="/AndezCh" element={<AndezCh />} />
 
-
       </Routes>
+      </div>
     </BrowserRouter>
   );
 }
